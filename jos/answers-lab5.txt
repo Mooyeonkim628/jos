@@ -1,0 +1,6 @@
+Question 1.
+
+
+No. 
+When CPU switch to kernel from FS env, EFLAG would be pushed to stack. 
+This flag will be poped when restoring the env, therefore we do not have to do anything else to ensure that this I/O privilege setting is saved and restored properly. 
